@@ -51,8 +51,9 @@ button {
     --bnt-weight: 700;
 
     --heading-font-l: 56px;
-    --heading-font-m: 40px;
+    --heading-font-m: 44px;
     --heading-font-s: 36px;
+    --heading-font-ss: 26px;
     --paragraph-font-m: 18px;
     --paragraph-font-s: 16px;
     --btn-font-m: 16px;
@@ -60,8 +61,9 @@ button {
     --box-font: 24px;
 
     --heading-line-l: 70px;
-    --heading-line-m: 51px;
+    --heading-line-m: 55px;
     --heading-line-s: 45px;
+    --heading-line-ss: 33px;
     --paragraph-line-m: 28px;
     --paragraph-line-s: 26px;
     --btn-line: 28px;
@@ -88,6 +90,20 @@ First Mobile
     font-weight: var(--bnt-weight);
     font-size: var(--btn-font-s);
     line-height: var(--btn-line);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--primary-btn-hover);
+}
+
+.btn.secundary-btn {
+    background-color: var(--secundary-btn);
+}
+
+.btn.secundary-btn:hover {
+    background-color: var(--secundary-btn-hover);
 }
 
 /* body */
@@ -134,42 +150,42 @@ body {
 /* main content */
 /* skilss - grid container */
 .skill-box:nth-child(1) {
-    max-width: 354px;
+    width: 100%;
     height: 364px;
     background-color: var(--box-background-a);
     grid-area: design;
 }
 
 .skill-box:nth-child(2) {
-    max-width: 164px;
+    width: 100%;
     height: 182px;
     background-color: var(--box-background-b);
     grid-area: ui-ux;
 }
 
 .skill-box:nth-child(3) {
-    max-width: 164px;
+    width: 100%;
     height: 182px;
     background-color: var(--box-background-c);
     grid-area: apps;
 }
 
 .skill-box:nth-child(4) {
-    max-width: 354px;
+    width: 100%;
     height: 158px;
     background-color: var(--box-background-d);
     grid-area: illust;
 }
 
 .skill-box:nth-child(5) {
-    max-width: 354px;
+    width: 100%;
     height: 182px;
     background-color: var(--box-background-e);
     grid-area: photo;
 }
 
 .skill-box:nth-child(6) {
-    max-width: 354px;
+    width: 100%;
     height: 182px;
     background-color: var(--box-background-f);
     grid-area: motion;
@@ -184,6 +200,7 @@ body {
         "illust illust"
         "photo photo"
         "motion motion";
+    justify-items: center;
     column-gap: 25px;
     row-gap: 24px;
 }
@@ -210,3 +227,335 @@ body {
     margin-left: 24px;
 }
 
+/* About me */
+.main-content .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.main-content .about-me .img-box {
+    margin: 0 22px;
+    max-width: 445px;
+}
+
+.main-content .about-me .img-box img {
+    width: 100%;
+}
+
+.main-content .about-me section h2 {
+    font-size: var(--heading-font-ss);
+    line-height: var(--heading-line-ss);
+}
+
+.main-content .about-me section p {
+    color: var(--paragraph);
+    font-weight: var(--paragraph-weight);
+    font-size: var(--paragraph-font-s);
+    line-height: var(--paragraph-line-s);
+    margin: 24px 0;
+}
+
+/* my work */
+/* carrousel */
+.my-work {
+    margin-bottom: 100px;
+}
+
+.my-work .carrousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 -16px;
+}
+
+.my-work .carrousel-container h2 {
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.my-work .carrousel-container #carrousel {
+    display: flex;
+    justify-content: center;
+    width: 1410px;
+    transition: 0.5s;
+}
+
+.my-work .carrousel-container #carrousel img {
+    height: 180px;
+    margin: 0 7.5px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.my-work .carrousel-container .carrousel-btns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.my-work .carrousel-container .carrousel-btns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-btn);
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.my-work .carrousel-container .carrousel-btns a:hover {
+    background-color: var(--primary-btn-hover);
+}
+
+.my-work .carrousel-container .carrousel-btns a img {
+    width: 14px;
+    height: 16px;
+}
+
+/* carrousel animation */
+.transition-1 {
+    transform: translateX(285px);
+}
+
+.transition-2 {
+    transform: translateX(570px);
+}
+
+.transition-3 {
+    transform: translateX(-570px);
+}
+
+.transition-4 {
+    transform: translateX(-285px);
+}
+
+.transition-5 {
+    transform: translateX(0px);
+}
+
+/* contact */
+.contact {
+    background-color: var(--primary-btn);
+    border-radius: 10px;
+    text-align: center;
+    color: var(--background);
+    padding: 48px 24px;
+    margin-bottom: 40px;
+}
+
+.contact h2 {
+    font-size: var(--heading-font-ss);
+    line-height: var(--heading-line-ss);
+    margin-bottom: 24px;
+}
+
+.contact p {
+    font-size: var(--paragraph-font-s);
+    line-height: var(--paragraph-line-s);
+    margin-bottom: 24px;
+}
+
+/* footer */
+.footer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.footer div img {
+    width: 48px;
+    height: 48px;
+}
+
+
+/* ------------------------------ 
+@medias
+
+Tablet
+-------------------------------*/
+
+
+@media(min-width: 768px) {
+    .btn {
+        width: 228px;
+        height: 56px;
+        font-size: var(--btn-font-m);
+    }
+
+    .header div {
+        margin: 0 30px;
+        margin-top: 24px;
+        margin-bottom: 64px;
+    }
+
+    .header div img {
+        width: 64px;
+        height: 64px;
+    }
+
+    .header section {
+        margin: 0 28px;
+        margin-bottom: 64px;
+    }
+
+    .header section h1 {
+        font-size: var(--heading-font-m);
+        line-height: var(--heading-line-m);
+    }
+
+    .header section p {
+        font-size: var(--paragraph-font-m);
+        line-height: var(--paragraph-line-m);
+        margin: 0;
+        margin-top: 27px;
+    }
+
+    /* main content */
+    /* skilss - grid container */
+    .main-content .skills {
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-areas:
+            "design ui-ux apps"
+            "design illust illust"
+            "photo motion motion";
+        margin: 0 29px;
+        margin-bottom: 120px;
+    }
+
+    /* About me */
+    .main-content .about-me {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .main-content .about-me section {
+        width: 820px;
+    }
+
+    .main-content .about-me section h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .main-content .about-me section p {
+        font-size: var(--paragraph-font-m);
+        line-height: var(--paragraph-line-m);
+    }
+
+    /* carrousel */
+    .my-work .carrousel-container #carrousel img {
+        height: 360px;
+        margin: 0 15px;
+        border-radius: 10px;
+        transition: 0.3s;
+    }
+
+    /* transitions */
+    .transition-1 {
+        transform: translateX(570px);
+    }
+
+    .transition-2 {
+        transform: translateX(1140px);
+    }
+
+    .transition-3 {
+        transform: translateX(-1140px);
+    }
+
+    .transition-4 {
+        transform: translateX(-570px);
+    }
+
+    .transition-5 {
+        transform: translateX(0px);
+    }
+
+    /* about me */
+    .contact {
+        padding: 0;
+        padding: 56px 75px 64px 75px;
+        margin-bottom: 56px;
+    }
+
+    .contact h2 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 24px;
+    }
+
+    .contact p {
+        font-size: var(--paragraph-font-m);
+        line-height: var(--paragraph-line-m);
+    }
+}
+
+
+/* ------------------------------ 
+Desktop
+-------------------------------*/
+
+
+@media(min-width: 1366px) {
+    body {
+        padding: 0 165px;
+        overflow-x: hidden;
+    }
+
+    .header div {
+        margin-top: 34px;
+    }
+
+    .header section h1 {
+        font-size: var(--heading-font-l);
+        line-height: var(--heading-line-l);
+    }
+
+    /* main content */
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* carrousel */
+    .skill-box:nth-child(6) {
+        height: 158px;
+    }
+
+    .skill-box:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .main-content .skills {
+        width: 100%;
+        grid-template-columns: 2fr 1fr 1fr 2fr;
+        grid-template-areas:
+            "design ui-ux apps photo"
+            "design illust illust motion";
+    }
+
+    /* about me */
+    .main-content .about-me {
+        max-width: 1200px;
+    }
+
+    /* carrousel */
+    .my-work .carrousel-container #carrousel {
+        width: 1920px;
+    }
+
+    .my-work .carrousel-container #carrousel img:hover {
+        opacity: 0.8;
+    }
+}
