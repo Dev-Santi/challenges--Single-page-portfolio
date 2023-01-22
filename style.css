@@ -482,9 +482,17 @@ Tablet
 
     /* about me */
     .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: left;
         padding: 0;
         padding: 56px 75px 64px 75px;
         margin-bottom: 56px;
+    }
+
+    .contact div {
+        width: 50%;
     }
 
     .contact h2 {
