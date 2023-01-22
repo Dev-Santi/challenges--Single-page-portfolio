@@ -1,0 +1,212 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+
+/* resets */
+* {
+    margin-block: 0;
+    margin-inline: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    /* outline: 1px solid #3832ec; */
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    background-color: unset;
+}
+
+:root {
+    /* variables */
+    /* pallete */
+    --background: #fff7f0;
+
+    --primary-btn: #030303;
+    --secundary-btn: #eb7565;
+    --primary-btn-hover: #755cde;
+    --secundary-btn-hover: #f6a560;
+    --text-btn: #fff7f0;
+
+    --heading: #030303;
+    --paragraph: #7a746e;
+
+    --box-background-a: #755cde;
+    --box-background-b: #f6a560;
+    --box-background-c: #f39e9e;
+    --box-background-d: #eb7565;
+    --box-background-e: #61c4b7;
+    --box-background-f: #552049;
+    --box-text: #fff7f0;
+
+    /* typography */
+    --heading-weight: 700;
+    --box-weight: 700;
+    --paragraph-weight: 500;
+    --bnt-weight: 700;
+
+    --heading-font-l: 56px;
+    --heading-font-m: 40px;
+    --heading-font-s: 36px;
+    --paragraph-font-m: 18px;
+    --paragraph-font-s: 16px;
+    --btn-font-m: 16px;
+    --btn-font-s: 14px;
+    --box-font: 24px;
+
+    --heading-line-l: 70px;
+    --heading-line-m: 51px;
+    --heading-line-s: 45px;
+    --paragraph-line-m: 28px;
+    --paragraph-line-s: 26px;
+    --btn-line: 28px;
+    --box-line: 30px;
+}
+
+
+/* ------------------------------ 
+Start
+
+First Mobile
+-------------------------------*/
+
+
+/* buttons */
+.btn {
+    width: 176px;
+    height: 44px;
+
+    color: var(--text-btn);
+    background-color: var(--primary-btn);
+    border-radius: 28px;
+
+    font-weight: var(--bnt-weight);
+    font-size: var(--btn-font-s);
+    line-height: var(--btn-line);
+}
+
+/* body */
+body {
+    background-color: var(--background);
+    padding: 16px;
+}
+
+/* header */
+.header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header div img {
+    width: 48px;
+    height: 48px;
+}
+
+.header section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 32px 0;
+}
+
+.header section h1 {
+    font-size: var(--heading-font-s);
+    line-height: var(--heading-line-s);
+    color: var(--heading);
+}
+
+.header section p {
+    width: 83%;
+    color: var(--paragraph);
+    font-weight: var(--paragraph-weight);
+    font-size: var(--paragraph-font-s);
+    line-height: var(--paragraph-line-s);
+    margin-top: 16px;
+}
+
+/* main content */
+/* skilss - grid container */
+.skill-box:nth-child(1) {
+    max-width: 354px;
+    height: 364px;
+    background-color: var(--box-background-a);
+    grid-area: design;
+}
+
+.skill-box:nth-child(2) {
+    max-width: 164px;
+    height: 182px;
+    background-color: var(--box-background-b);
+    grid-area: ui-ux;
+}
+
+.skill-box:nth-child(3) {
+    max-width: 164px;
+    height: 182px;
+    background-color: var(--box-background-c);
+    grid-area: apps;
+}
+
+.skill-box:nth-child(4) {
+    max-width: 354px;
+    height: 158px;
+    background-color: var(--box-background-d);
+    grid-area: illust;
+}
+
+.skill-box:nth-child(5) {
+    max-width: 354px;
+    height: 182px;
+    background-color: var(--box-background-e);
+    grid-area: photo;
+}
+
+.skill-box:nth-child(6) {
+    max-width: 354px;
+    height: 182px;
+    background-color: var(--box-background-f);
+    grid-area: motion;
+}
+
+.main-content .skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "design design"
+        "ui-ux apps"
+        "illust illust"
+        "photo photo"
+        "motion motion";
+    column-gap: 25px;
+    row-gap: 24px;
+}
+
+.main-content .skills .skill-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    border-radius: 8px;
+}
+
+.main-content .skills .skill-box .img-box {
+    margin-top: 24px;
+    margin-right: 24px;
+}
+
+.main-content .skills .skill-box h2 {
+    text-align: left;
+    color: var(--box-text);
+    font-weight: var(--box-weight);
+    line-height: var(--box-line);
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+
