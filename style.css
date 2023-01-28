@@ -515,6 +515,8 @@ Desktop
 
 @media(min-width: 1366px) {
     body {
+        max-width: 1600px;
+        margin: 0 auto;
         padding: 0 165px;
         overflow-x: hidden;
     }
