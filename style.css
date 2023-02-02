@@ -298,7 +298,7 @@ body {
     margin-top: 32px;
 }
 
-.my-work .carrousel-container .carrousel-btns a {
+.my-work .carrousel-container .carrousel-btns button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,11 +310,11 @@ body {
     transition: 0.2s;
 }
 
-.my-work .carrousel-container .carrousel-btns a:hover {
+.my-work .carrousel-container .carrousel-btns button:hover {
     background-color: var(--primary-btn-hover);
 }
 
-.my-work .carrousel-container .carrousel-btns a img {
+.my-work .carrousel-container .carrousel-btns button img {
     width: 14px;
     height: 16px;
 }
