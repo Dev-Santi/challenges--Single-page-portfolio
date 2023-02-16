@@ -1,6 +1,6 @@
 # Welcome to News Homepage!
 
-![Screenshot of the page](./assets/desktop-mobile.png)
+![Screenshot of the page](./assets/screen.png)
 
 ## About this proyect
 
