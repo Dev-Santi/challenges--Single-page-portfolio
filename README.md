@@ -1,5 +1,7 @@
 # About this proyect
 
+![Screenshot of the page](/assets/Web capture_15-2-2023_232556_dev-santi.github.io.jpg)
+
 ## Where it comes from?
 
 It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a>
