@@ -6,7 +6,7 @@
 
 It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a>
 
-## What did I do?
+## How I made it
 
 - I used pure CSS and vanilla JS
 - I tried to make it the fastest and cleaner i can
