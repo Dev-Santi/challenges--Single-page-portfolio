@@ -1,4 +1,4 @@
-# Welcome to News Homepage!
+# Welcome to Single Page Portfolio!
 
 ![Screenshot of the page](./assets/screen.png)
 
