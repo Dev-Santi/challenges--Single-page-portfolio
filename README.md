@@ -1,12 +1,12 @@
-# About this proyect
+# Welcome to News Homepage!
 
-![Screenshot of the page](./assets/screenshot.png)
+![Screenshot of the page](./assets/desktop-mobile.png)
 
-## Where it comes from?
+## About this proyect
 
 It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a>
 
-## How i did it?
+## What did I do?
 
 - I used pure CSS and vanilla JS
 - I tried to make it the fastest and cleanest i can
