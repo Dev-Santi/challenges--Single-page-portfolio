@@ -1,6 +1,6 @@
 # About this proyect
 
-![Screenshot of the page](./assets/screenshot.jpeg)
+![Screenshot of the page](./assets/screenshot.png)
 
 ## Where it comes from?
 
