@@ -1,6 +1,6 @@
 # About this proyect
 
-![Screenshot of the page](./assets/Web capture_15-2-2023_232556_dev-santi.github.io.jpg)
+![Screenshot of the page](./assets/screenshot.jpg)
 
 ## Where it comes from?
 
