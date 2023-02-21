@@ -4,7 +4,7 @@
 
 ## About this proyect
 
-It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a>
+It is a challenge proyect supplied by <a href="https://www.frontendmentor.io/profile/SantiNakc">Frontend Mentor</a><br>
 A portfolio web for a designer, which includes grid containers and a carrousel.
 
 ## How I made it
